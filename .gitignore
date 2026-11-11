@@ -25,9 +25,9 @@ replay_pid*
 
 #IntelliJ IDEA
 .idea/
-./spring/target/
-./game/target/
+spring/target/
+game/target/
 
 # App-specific files
 *.db
-./logs
+logs
