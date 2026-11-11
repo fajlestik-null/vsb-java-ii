@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane fx:id="saveBrowserPanel" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #1a1a1a;" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lab.SaveBrowserController">
+
+    <top>
+        <Label style="-fx-font-size: 60px" styleClass="arcadeText" text="LOAD GAME" textFill="WHITE" BorderPane.alignment="CENTER">
+            <BorderPane.margin>
+                <Insets top="20.0" />
+            </BorderPane.margin>
+        </Label>
+    </top>
+
+    <center>
+        <TableView fx:id="saveTable" opacity="0.9" BorderPane.alignment="CENTER">
+            <columns>
+                <TableColumn fx:id="nickColumn" prefWidth="150" text="Nickname" />
+                <TableColumn fx:id="descColumn" prefWidth="197" text="Description" />
+                <TableColumn fx:id="dateColumn" prefWidth="150" text="Date &amp; Time" />
+            </columns>
+            <BorderPane.margin>
+                <Insets bottom="20" left="50" right="50" top="20" />
+            </BorderPane.margin>
+        </TableView>
+    </center>
+
+    <bottom>
+        <VBox alignment="CENTER" spacing="20" BorderPane.alignment="CENTER">
+            <Button fx:id="exit" mnemonicParsing="false" onAction="#onBackToMenu" style="-fx-background-color: #8aa3b1; -fx-text-fill: WHITE; -fx-background-radius: 10;" text="BACK TO MENU">
+                <font>
+                    <Font name="System Bold" size="24.0" />
+                </font>
+                <VBox.margin>
+                    <Insets bottom="20.0" />
+                </VBox.margin>
+            </Button>
+        </VBox>
+    </bottom>
+
+</BorderPane>
